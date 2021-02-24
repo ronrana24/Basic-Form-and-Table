@@ -1,0 +1,16 @@
+table {
+    background-color: rgb(169, 184, 169);
+    border: 3px solid black;
+    padding:4px;
+}
+tr, td, th {
+    border: 1px solid black;
+}
+.center {
+    text-align: center;
+}
+#vertical {
+    writing-mode: vertical-lr;
+    text-align: center;
+    text-orientation: upright;
+}
