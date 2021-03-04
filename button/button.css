@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color:rgb(15, 15, 15);
+}
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#container button {
+    color: #f1d1d0;
+    text-align: center;
+    padding: 2.5rem 4rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border: 2px solid #B768A2;
+    
+}
+button:hover {
+    box-shadow: 0px 6px 15px -3px #B768A2;
+    transition: all 0.3s;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon2 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+      }
+      to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f1d1d0, 0 0 35px #f1d1d0;
+      }
+}
