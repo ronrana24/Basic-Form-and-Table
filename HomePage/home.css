@@ -13,6 +13,42 @@ nav {
     justify-content: space-between;
 }
 
+#hamburger {
+    position: relative;
+}
+
+#hamburger input[type="checkbox"] {
+    display: block;
+    height: 25px;
+    width: 33px;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    
+}
+
+#hamburger span {
+    width: 33px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 2px;
+    z-index: 1;
+    display: block;
+    transform-origin: 3px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+
+#hamburger input:checked ~ span {
+    transform: rotate(45deg) translate(-2px, -1px);
+}
+#hamburger input:checked ~ span:nth-child(3) {
+    opacity: 0;
+}
+#hamburger input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -35,6 +71,18 @@ nav span {
     font-weight: 700;
     line-height: 2em;
     font-size: calc(1.2vw + 1rem);
+}
+
+@media (min-width: 750px) {
+    .hide_for_full {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .hide_for_mobile {
+        display: none;
+    }
 }
 
 #cover {
@@ -63,7 +111,8 @@ section ul {
 }
 section ul li {
     width: 230px;
-    margin-right: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     margin-bottom: 2vw;
 }
 

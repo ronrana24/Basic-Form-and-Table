@@ -9,8 +9,9 @@
 </head>
 <body>
     <!-- Navigation-Bar -->
-    <nav>
-        <ul class="navbar">
+    <nav id="full_navbar">
+        <!-- Full Screen Navigation Bar -->
+        <ul class="navbar hide_for_mobile">
             <li>
                 <a href="#">
                     Home
@@ -27,8 +28,8 @@
                 </a>
             </li>
         </ul>
-        <span id="company">Company Name</span>
-        <ul class="navbar">
+        <span id="company" class="hide_for_mobile">Company Name</span>
+        <ul class="navbar hide_for_mobile">
             <li>
                 <a href="#">
                     Log-In
@@ -40,6 +41,17 @@
                 </a>
             </li>
         </ul>
+        <!-- Full Screen Navigation Bar -->
+
+        <!-- Mobile Navigation Bar -->
+        <span id="company" class="hide_for_full">Company Name</span>
+        <div id="hamburger" class="hide_for_full">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Mobile Navigation Bar -->
     </nav>
     <!-- Navigation-Bar -->
 
